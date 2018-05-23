@@ -9474,8 +9474,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
   /* ---------------------------------
-	9. COUNTER SECTION
-	--------------------------------- */
+    9. COUNTER SECTION
+    --------------------------------- */
   .counter-section {
     text-align: center;
     padding: 50px 0 20px; }
@@ -9485,20 +9485,20 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       text-align: left; } }
 
 /* Screens Resolution : 992px
-  -------------------------------------------------------------------------- */
+-------------------------------------------------------------------------- */
 @media only screen and (max-width: 992px) {
   /* ---------------------------------
-	4. INTRO SECTION
-	--------------------------------- */
+    4. INTRO SECTION
+    --------------------------------- */
   .intro-section {
     padding-top: 100px; } }
 
 /* Screens Resolution : 767px
-  -------------------------------------------------------------------------- */
+-------------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
   /* ---------------------------------
-	1. PRIMARY STYLES
-	--------------------------------- */
+    1. PRIMARY STYLES
+    --------------------------------- */
   p {
     line-height: 1.4; }
   h1 {
@@ -9508,20 +9508,20 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   h3 {
     font-size: 1.8em; }
   /* ---------------------------------
-	2. COMMONS FOR PAGE DESIGN
-	--------------------------------- */
+    2. COMMONS FOR PAGE DESIGN
+    --------------------------------- */
   .section {
     padding: 50px 0 0px; }
     .section .heading {
       margin-bottom: 30px; }
   /* ---------------------------------
-	4. INTRO SECTION
-	--------------------------------- */
+    4. INTRO SECTION
+    --------------------------------- */
   .intro-section {
     padding-top: 200px; }
   /* ---------------------------------
-	5. PORFOLIO SECTION
-	--------------------------------- */
+    5. PORFOLIO SECTION
+    --------------------------------- */
   .portfolio-section {
     padding-bottom: 0; }
     .portfolio-section .portfolioFilter {
@@ -9534,33 +9534,33 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       padding: 0 15px 0px;
       max-width: 400px; }
   /* ---------------------------------
-	8. EDUCATION SECTION
-	--------------------------------- */
+    8. EDUCATION SECTION
+    --------------------------------- */
   .education-wrapper:after, .education-wrapper .education:after {
     display: none; } }
 
 /* Screens Resolution : 575px
-  -------------------------------------------------------------------------- */
+-------------------------------------------------------------------------- */
 @media only screen and (max-width: 575px) {
   /* ---------------------------------
-	1. PRIMARY STYLES
-	--------------------------------- */
+    1. PRIMARY STYLES
+    --------------------------------- */
   body {
     font-size: 14px; }
   /* ---------------------------------
-	5. PORFOLIO SECTION
-	--------------------------------- */
+    5. PORFOLIO SECTION
+    --------------------------------- */
   .portfolio-section .p-item {
     width: 100%; } }
 
 /* Screens Resolution : 479px
-  -------------------------------------------------------------------------- */
+-------------------------------------------------------------------------- */
 /* Screens Resolution : 359px
-  -------------------------------------------------------------------------- */
+-------------------------------------------------------------------------- */
 @media only screen and (max-width: 359px) {
   /* ---------------------------------
-	3. HEADER
-	--------------------------------- */
+    3. HEADER
+    --------------------------------- */
   header .heading-wrapper {
     padding: 30px 20px 20px; }
   header .info .icon {
@@ -9569,13 +9569,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     margin-left: 35px; } }
 
 /* Screens Resolution : 290px
-  -------------------------------------------------------------------------- */
+-------------------------------------------------------------------------- */
 /* Screens Resolution : 290px
-  -------------------------------------------------------------------------- */
+-------------------------------------------------------------------------- */
 @media only screen and (max-width: 260px) {
   /* ---------------------------------
-	3. HEADER
-	--------------------------------- */
+    3. HEADER
+    --------------------------------- */
   header .heading-wrapper {
     padding: 10px 15px 0px; }
   header .info .icon {
@@ -9583,8 +9583,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   header .info .right-area {
     margin-left: 20px; }
   /* ---------------------------------
-	4. INTRO SECTION
-	--------------------------------- */
+    4. INTRO SECTION
+    --------------------------------- */
   .intro {
     padding: 20px 10px 0;
     margin-right: -15px;
@@ -9799,6 +9799,8 @@ header {
     top: -100px;
     margin-bottom: -70px;
     box-shadow: 1px -7px 31px 5px rgba(0, 1, 5, 0.43); }
+  .intro .pl-0 {
+    padding-left: 0; }
   .intro .information > li {
     display: block;
     margin: 5px 0; }
@@ -9838,8 +9840,7 @@ header {
       .portfolio-section .portfolioFilter a.current {
         color: #16b1ff; }
   .portfolio-section .portfolioContainer {
-    margin-left: -15px;
-    margin-right: -15px; }
+    text-align: center; }
   .portfolio-section .p-item {
     width: 33.333%;
     padding: 0 7.5px 0px;
@@ -9863,7 +9864,7 @@ header {
     font-size: 2.2em;
     font-weight: 500;
     padding-bottom: 25px !important;
-    color: #333 !important; }
+    color: #1a097a !important; }
     .radial-progress .progressbar-text:after {
       content: '%'; }
   .radial-progress .progress-title {
@@ -9877,7 +9878,7 @@ header {
     color: #777; }
 
 .experience-section {
-  background: #28023D;
+  background: #293640;
   color: #fff; }
 
 .experience .list > li {
