@@ -197,3 +197,25 @@ function isExists(elem){
 	}
 	return false;
 }
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+
+function expandedForm(num) {
+let val = num.toString().length;
+let val1 = val;
+let final = '';
+	for(let i = 0; i < val; i++){
+	if(num.toString().charAt(i) !== "0" && i === 0){
+		final = num.toString().charAt(i)+"0".repeat(val1-1);
+		val1 = val1-1;
+	}else if (i !== 0 && num.toString().charAt(i) !== "0"){
+		final = final + ' + ' + num.toString().charAt(i)+"0".repeat(val1-1);
+		val1 = val1-1;
+	}else if (num.toString().charAt(i) == "0"){
+		val1 = val1-1;
+	}
+	}
+	return final;
+}

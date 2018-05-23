@@ -1,0 +1,48 @@
+<html>
+        <head>
+            <link rel="shortcut icon" type="image/ico" href="./images/fav.ico" //>
+            <title>Expanded Form</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="UTF-8">
+        
+            <link href="common-css/css/index.css" rel="stylesheet">
+        
+        </head>
+<body>
+    <h2>Expanded Form</h2>
+    <div>
+        <h3>Insert a number</h3>
+        <input type="text"
+            oninput="expandedForm()"
+            onkeyup="this.value = this.value.replace(/[^0-9]/g, '');">
+        </input>
+        <p id="result"></p>
+    </div>
+</body>
+
+<h3><a href="index.html">
+    <ion-icon name="arrow-dropleft-circle"></ion-icon>
+</a></h3>
+
+</html>
+
+<!-- CodeWars scripts, coding for fun -->
+
+<script>
+    function expandedForm(num = event.target.value) {
+        num = num.replace(/[^0-9]/g, '');
+        num = String(num);
+        let result = [];
+        for (var i = 0; i < num.length; i++) {
+            if (num[i] == 0) {
+                continue;
+            } else {
+                result.push(num[i] + "0".repeat(num.length - i - 1));
+            }
+        }
+        let values = result.join(" + ");
+        document.getElementById('result').innerHTML = values;
+    }
+</script>
+
+<script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
