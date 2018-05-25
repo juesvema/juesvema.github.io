@@ -9705,19 +9705,6 @@ b.max-bold {
       display: block;
       background: #1b709a; }
 
-.margin-t-10 {
-  margin-top: 10px; }
-
-.margin-b-30 {
-  margin-bottom: 30px; }
-
-.margin-b-50 {
-  margin-bottom: 50px; }
-
-.margin-tb-30 {
-  margin-top: 30px;
-  margin-bottom: 30px; }
-
 .font-blue {
   color: #1b709a; }
 
@@ -9801,6 +9788,8 @@ header {
     box-shadow: 1px -7px 31px 5px rgba(0, 1, 5, 0.43); }
   .intro .pl-0 {
     padding-left: 0; }
+  .intro .text-center {
+    text-align: center; }
   .intro .information > li {
     display: block;
     margin: 5px 0; }
@@ -9924,3 +9913,27 @@ header {
 
 .pt-1 {
   padding-top: 0.25rem; }
+
+.element-animation {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }

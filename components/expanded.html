@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Expanded Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <link href="../common-css/css/index.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>
+
+<!-- CodeWars scripts, coding for fun -->
+
+<script type="text/babel">
+
+    const changeValue = (e) => {
+        e.target.value = e.target.value.replace(/[^0-9]/g, '')
+    }
+
+    ReactDOM.render(
+    <div className="text-center card mt-5">
+        <h2>Expanded Form using React</h2><br/>
+        <div>
+            <h3>Insert a number</h3>
+            <input type="text" onInput={(e)=>expandedForm(e)} onKeyUp={(e) => changeValue(e)}>
+            </input>
+        </div>
+            <p className="mt-5">RESULT: <span id="result"></span></p>
+
+        <h3>
+            <a href="../index.html">
+                <ion-icon name="arrow-dropleft-circle"></ion-icon>
+            </a>
+        </h3>
+    </div>, document.getElementById('root') );
+
+</script>
+
+<script>
+    function expandedForm(num) {
+        num = num.target.value.replace(/[^0-9]/g, '');
+        num = String(num);
+        let result = [];
+        for (var i = 0; i < num.length; i++) {
+            if (num[i] == 0) {
+                continue;
+            } else {
+                result.push(num[i] + "0".repeat(num.length - i - 1));
+            }
+        }
+        let values = result.join(" + ");
+        document.getElementById('result').innerHTML = values;
+    }
+</script>
+
+<script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>

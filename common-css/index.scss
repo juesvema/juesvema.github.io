@@ -1,4 +1,8 @@
-@import "styles.scss";
+@import "./_helpers/bootstrap.scss";
+@import "./_helpers/fluidbox.min.scss";
+@import "./_helpers/ionicons.scss";
+@import "./_helpers/responsive.scss";
+@import "./_helpers/_variables.scss";
 
 html {
     font-size: 100%;
@@ -141,23 +145,6 @@ b.max-bold {
     }
 }
 
-.margin-t-10 {
-    margin-top: 10px;
-}
-
-.margin-b-30 {
-    margin-bottom: 30px;
-}
-
-.margin-b-50 {
-    margin-bottom: 50px;
-}
-
-.margin-tb-30 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 .font-blue {
     color: $blue;
 }
@@ -266,6 +253,10 @@ header {
 
     .pl-0 {
         padding-left: 0;
+    }
+
+    .text-center {
+        text-align: center;
     }
 
     .information > li {
@@ -437,3 +428,32 @@ header {
 .pt-1 {
     padding-top: 0.25rem;
 }
+
+.element-animation {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
+    @keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    } 
